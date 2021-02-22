@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    background-size: 100% 50vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    z-index: 1;
+}
+
+.first_card,
+.second_card {
+    border-radius: 10px;
+}
+
+.first_card {
+    background-color: hsl(228, 56%, 26%);
+    margin-right: 25px;
+    min-width: 240px;
+    padding: 40px;
+    border-top-right-radius: 100px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 35px;
+}
+
+.icons div {
+    background:hsl(229, 57%, 11%);
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons div + div {
+    margin-left: 15px;
+}
+
+.second_card {
+    align-self: flex-end;
+    width: 500px;
+    position: relative;
+}
+
+.box {
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    color: hsl(243, 100%, 93%);
+}
+
+.box span {
+    font-weight: 700;
+}
+
+.progress_bar {
+    margin: 10px 0;
+    width: 100%;
+    height: 20px;
+    background-color:hsl(229, 57%, 11%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.progress_bar2 {
+    margin: 2px;
+    width: 70%;
+    height: 16px;
+    background-image: linear-gradient(to right, #ffa399, #ff4d97 );
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.progress_bar3 {
+    margin: 2px;
+    height: 14px;
+    width: 14px;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+}
+
+.numbers_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balao {
+    width: 170px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: hsl(243, 100%, 93%);
+    position: absolute;
+    top: -50px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balao h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.balao small {
+    color: hsl(229, 7%, 55%);
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.triangulo {
+    border-right: 25px solid hsl(243, 100%, 93%);
+    border-left: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+
+@media screen and (max-width: 870px) {
+    .container {
+        display: block;
+    }
+
+    .first_card {
+        margin-right: 0;
+    }
+
+    .triangulo {
+        display: none;
+    }
+
+    .balao {
+        position: absolute;
+        bottom: -35px;
+        right: 170px;
+        top: 110px;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+
+}
+
+/*CELULAR*/
+@media screen and (max-width:767px) {
+    body {
+
+    }
+
+    .first_card {
+        max-width: 240px;
+    }
+
+    .second_card {
+        width: auto;
+    }
+
+    .balao {
+        position: absolute;
+        bottom: -20px;
+        top: 122px;
+        right: 89px;
+    }
+
+    
+}
+
+
