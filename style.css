@@ -173,7 +173,10 @@ section {
 /*CELULAR*/
 @media screen and (max-width:767px) {
     body {
-
+        background-image: url(./images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
     }
 
     .first_card {
@@ -191,7 +194,6 @@ section {
         right: 89px;
     }
 
-    
 }
 
 
